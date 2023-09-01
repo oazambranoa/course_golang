@@ -2,7 +2,36 @@ package main
 
 import "fmt"
 
+func normalFunction(message string) {
+	fmt.Println(message)
+}
+
+func tirpeArgument(a int, b int, c string) {
+	fmt.Println(a, b, c)
+}
+
+func returnValue(a int) int {
+	return a * 2
+}
+
+func doubleRetunr(a int) (c, d int){
+	return a, a*2
+}
+
 func main() {
+
+	normalFunction("Hola mundo")
+	tirpeArgument(1, 2, "hola")
+
+	value := returnValue(2)
+	fmt.Println("Value:", value)
+
+//	value1, value2 := doubleRetunr(2)
+//	fmt.Println("Value 1 y 2:", value1, value2)
+
+	value1, _ := doubleRetunr(2)
+	fmt.Println("Value 1 :", value1, )
+
 	// Declaracion de variables
 
 	hellMessage := "hello"
@@ -25,7 +54,6 @@ func main() {
 	// Tipo datos
 	fmt.Printf("hellMessage: %T", hellMessage)
 	fmt.Printf("Años: %T", edad)
-	
 
 	// Declaracion de constantes
 
