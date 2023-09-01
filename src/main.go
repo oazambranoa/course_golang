@@ -14,8 +14,8 @@ func returnValue(a int) int {
 	return a * 2
 }
 
-func doubleRetunr(a int) (c, d int){
-	return a, a*2
+func doubleRetunr(a int) (c, d int) {
+	return a, a * 2
 }
 
 func main() {
@@ -26,11 +26,11 @@ func main() {
 	value := returnValue(2)
 	fmt.Println("Value:", value)
 
-//	value1, value2 := doubleRetunr(2)
-//	fmt.Println("Value 1 y 2:", value1, value2)
+	//	value1, value2 := doubleRetunr(2)
+	//	fmt.Println("Value 1 y 2:", value1, value2)
 
 	value1, _ := doubleRetunr(2)
-	fmt.Println("Value 1 :", value1, )
+	fmt.Println("Value 1 :", value1)
 
 	// Declaracion de variables
 
@@ -117,5 +117,26 @@ func main() {
 
 	// Retos
 	// -Rectangulo, trapecio y de un circulo
+
+	//FOr condicional
+
+	for i := 0; i <= 10; i++ {
+		fmt.Println(i)
+	}
+
+	//For while
+	counter := 0
+	for counter < 10 {
+		fmt.Println(counter)
+		counter++
+	}
+
+	// For forever
+	counterForever := 0
+
+	for {
+		fmt.Println(counterForever)
+		counterForever++
+	}
 
 }
