@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+type car struct {
+	brand string
+	year int
+}
+
+/*
 func normalFunction(message string) {
 	fmt.Println(message)
 }
@@ -16,10 +22,11 @@ func returnValue(a int) int {
 
 func doubleRetunr(a int) (c, d int) {
 	return a, a * 2
-}
+} */
 
 func main() {
-
+	fmt.Println("Hola")
+	/*
 	normalFunction("Hola mundo")
 	tirpeArgument(1, 2, "hola")
 
@@ -130,13 +137,33 @@ func main() {
 		fmt.Println(counter)
 		counter++
 	}
+	
+		// For forever
+		counterForever := 0
 
-	// For forever
-	counterForever := 0
+		for {
+			fmt.Println(counterForever)
+			counterForever++
+		} 
 
-	for {
-		fmt.Println(counterForever)
-		counterForever++
+	// Llave valor
+	m := make(map[string]int)
+
+	m["Omar"] = 14
+	m["Pepito"] = 20
+
+	fmt.Println(m)
+
+	// Recorrer un map
+	for i, v := range m {
+		fmt.Println(i, v)
 	}
+
+	// ENcontrar un valor
+
+	value3, ok := m["Josep"]
+	fmt.Println(value3, ok) */
+	myCar := car{brand: "Ford", year: 2020}
+	fmt.Println(myCar)
 
 }
