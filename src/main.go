@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	pk "course_golang/src/mypackage"
+	"fmt"
+)
 
+/*
 type car struct {
 	brand string
 	year int
-}
+} */
 
 /*
 func normalFunction(message string) {
@@ -162,7 +166,7 @@ func main() {
 	// ENcontrar un valor
 
 	value3, ok := m["Josep"]
-	fmt.Println(value3, ok) */
+	fmt.Println(value3, ok) 
 
 	myCar := car{brand: "Ford", year: 2020}
 	fmt.Println(myCar)
@@ -170,6 +174,14 @@ func main() {
 	//Otra manera
 	var otherCar car
 	otherCar.brand = "Ferrari"
-	fmt.Println(otherCar)
+	fmt.Println(otherCar)*/
+
+	var myCar pk.CarPublic
+	myCar.Brand = "Ferrari"
+	myCar.Year = 2020
+	fmt.Println(myCar)
+
+	pk.PrintMessage()
+
 
 }
